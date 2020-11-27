@@ -3,446 +3,475 @@
     <head>
         <title>Google Search Results Page</title>
         <script src="https://kit.fontawesome.com/70b29ff15f.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="styles/style.css">
     </head>
 
     <body>
 
-        <header>
-            <div class="nav" id="nav-search">
-                <img id="main-logo" 
-                src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
-                alt="Google Logo"
-                >
-                <form class="search-bar">
-                    <div class="search-container">
-                        <input type="text" id="search-input" name="search-input">
-                        <input type="reset" id="search-reset" name="search-reset">
-                    </div>
-                    <div class="submit-container">
-                        <img id="voice-search"
-                        src="https://i.pinimg.com/originals/ea/5f/5b/ea5f5bd3b4110f2afb958049b4096d3a.png"
-                        alt="Non-fuctional Voice Search Button"
+        <div class="page-container" >
+            <header class="nav-section">
+                <div class="nav" id="nav-search">
+                    <img id="main-logo" 
+                    src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+                    alt="Google Logo"
+                    >
+                    <form class="search-bar">
+                        <div class="search-container">
+                            <input type="text" id="search-input" name="search-input" placeholder="build this webpage">
+                            <input type="reset" value="X" id="search-reset" name="search-reset">
+                        </div>
+                        <div class="submit-container">
+                            <input type="image" 
+                            src="https://i.pinimg.com/originals/ea/5f/5b/ea5f5bd3b4110f2afb958049b4096d3a.png"
+                            id="voice-search" 
+                            name="voice-search"
+                            >
+                            <input type="image" 
+                            src="https://www.pikpng.com/pngl/b/54-545017_facebook-search-icon-google-search-magnifying-glass-clipart.png" 
+                            id="search-submit" 
+                            name="search-submit"
+                            >
+                        </div>
+                    </form>
+                    <div class=spacing></div>
+                    <div class="account-container">
+                        <img id="google-apps"
+                        src="https://powerbrainstorming.files.wordpress.com/2015/04/img_0520.jpg"
+                        alt="Google Apps Menu Icon"
                         >
-                        <input type="image" 
-                        src="https://www.pikpng.com/pngl/b/54-545017_facebook-search-icon-google-search-magnifying-glass-clipart.png" 
-                        id="search-submit" 
-                        name="search-submit"
+                        <img id="profile-image"
+                        src="https://play-lh.googleusercontent.com/-F3zk3gGvadI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucmwufyAA5npkmQHfqkajUG3eF4GDw/photo.jpg"
+                        alt="Google Profile Picture"
                         >
                     </div>
-                </form>
-                <img id="google-apps"
-                src="https://mlsvc01-prod.s3.amazonaws.com/dbc43ce5501/d4237181-52b6-4b1c-9466-753a7cc71868.jpg"
-                alt="Google Apps Menu Icon"
-                >
-                <img id="profile-image"
-                src="https://play-lh.googleusercontent.com/-F3zk3gGvadI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucmwufyAA5npkmQHfqkajUG3eF4GDw/photo.jpg"
-                alt="Google Profile Picture"
-                >
-            </div>
-            <div class="nav" id="nav-bar">
-                <ul class="main-nav">
-                    <li>
-                        <a class="nav-item" id="all-link" href="">
-                            <i class="fas fa-search"></i>
-                            <p class="nav-text" id="all-text">All</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="nav-item" id="news-link" href="">
-                            <i class="far fa-newspaper"></i>
-                            <p class="nav-text" id="news-text">News</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="nav-item" id="maps-link" href="">
-                            <i class="fas fa-map-marker-alt"></i>  
-                            <p class="nav-text" id="maps-text">Maps</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="nav-item" id="videos-link" href="">
-                            <i class="fab fa-youtube"></i>
-                            <p class="nav-text" id="videos-text">Videos</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="nav-item" id="shopping-link" href="">
-                            <i class="fas fa-tag"></i>
-                            <p class="nav-text" id="shopping-text">Shopping</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="nav-item" id="more-link" href="">
-                            <i class="fas fa-ellipsis-v"></i>
-                            <p class="nav-text" id="more-text">More</p>
-                        </a>
-                    </li>
-                </ul>
-                <ul class="settings-nav">
-                    <li>
-                        <a class="nav-item" id="settings-link" href="">
-                            <p class="nav-text" id="settings-text">Settings</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="nav-item" id="tools-link" href="">
-                            <p class="nav-text" id="tools-text">Tools</p>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </header>
-
-        <section>
-            <div class="search-metadata">
-                <p>About 82,200,000 results (0.62 seconds)</p>
-            </div>
-            <div class="search-result">
-                <p class="result-path">
-                    victor-lf.github.io<span class="address"> &#8250; google-search-results &#9662;</span>
-                </p>
-                <a class="result-title" href="">
-                    build this webpage - GitHub Pages
-                </a>
-                <p class="result-preview">
-                    build this webpage. https://benjdelt.github.io/google-results/. With zero coding experience, artist building 180 webpages in 180 days ...
-                </p>
-            </div>
-            <div class="search-result">
-                <p class="result-path">
-                    christine-27.github.io<span class="address"> &#8250; google-homepage &#9662;</span>
-                </p>
-                <a class="result-title" href="">
-                    build this webpage - GitHub Pages
-                </a>
-                <p class="result-preview">
-                    With zero coding experience, artist building 180 webpages in 180 days. hhttps://arstechnica.com/.../with-zero-coding-experience-artist-building-180-webpages-.
-                </p>
-            </div>
-            <div class="insert" id="video-insert">
-                <div id="videos-title-container">
-                    <i class="fab fa-youtube"></i>
-                    <p class="insert-title" id="videos-title">Videos</p>
                 </div>
-                <div class="rounded-container" id="videos-container">
-                    <div class="videos-item" id="website-learners">
+                <div class="nav" id="nav-bar">
+                    <ul class="main-nav">
+                        <li>
+                            <a class="nav-item" id="all-link" href="">
+                                <i class="fas fa-search"></i>
+                                <p class="nav-text" id="all-text">All</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-item" id="news-link" href="">
+                                <i class="far fa-newspaper"></i>
+                                <p class="nav-text" id="news-text">News</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-item" id="maps-link" href="">
+                                <i class="fas fa-map-marker-alt"></i>  
+                                <p class="nav-text" id="maps-text">Maps</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-item" id="videos-link" href="">
+                                <i class="fab fa-youtube"></i>
+                                <p class="nav-text" id="videos-text">Videos</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-item" id="shopping-link" href="">
+                                <i class="fas fa-tag"></i>
+                                <p class="nav-text" id="shopping-text">Shopping</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-item" id="more-link" href="">
+                                <i class="fas fa-ellipsis-v"></i>
+                                <p class="nav-text" id="more-text">More</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="settings-nav">
+                        <li>
+                            <a class="nav-item" id="settings-link" href="">
+                                <p class="nav-text" id="settings-text">Settings</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-item" id="tools-link" href="">
+                                <p class="nav-text" id="tools-text">Tools</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+    
+            <section id="main-section">
+                <div class="search-metadata">
+                    <p>About 82,200,000 results (0.62 seconds)</p>
+                </div>
+                <div class="search-result">
+                    <p class="result-path">
+                        victor-lf.github.io<span class="address"> &#8250; google-search-results &#9662;</span>
+                    </p>
+                    <a class="result-title" href="">
+                        build this webpage - GitHub Pages
+                    </a>
+                    <p class="result-preview">
+                        build this webpage. https://benjdelt.github.io/google-results/. With zero coding experience, artist building 180 webpages in 180 days ...
+                    </p>
+                </div>
+                <div class="search-result">
+                    <p class="result-path">
+                        christine-27.github.io<span class="address"> &#8250; google-homepage &#9662;</span>
+                    </p>
+                    <a class="result-title" href="">
+                        build this webpage - GitHub Pages
+                    </a>
+                    <p class="result-preview">
+                        With zero coding experience, artist building 180 webpages in 180 days. hhttps://arstechnica.com/.../with-zero-coding-experience-artist-building-180-webpages-.
+                    </p>
+                </div>
+                <div class="insert" id="video-insert">
+                    <div id="videos-title-container">
+                        <i class="fab fa-youtube"></i>
+                        <p class="insert-title" id="videos-title">Videos</p>
+                    </div>
+                    <div class="rounded-container" id="videos-container">
                         <a class="videos-item-link" href="https://www.youtube.com/watch?v=YWA-xbsJrVg">
-                            <img class="videos-thumbnail" src="http://i3.ytimg.com/vi/YWA-xbsJrVg/maxresdefault.jpg" alt="Website Learners Video Thumbnail">
-                            <p class="videos-item-title">How to Make a Website in 10 mins - Simple & Easy</p>
-                            <p class="youtube">
-                                Youtube<span class="channel"> &#183; Website Learners</span>
-                            </p>
-                            <p class="date">Jan 3, 2018</p>
+                            <div class="videos-item" id="website-learners">
+                                <img class="videos-thumbnail" src="http://i3.ytimg.com/vi/YWA-xbsJrVg/maxresdefault.jpg" alt="Website Learners Video Thumbnail">
+                                <div class="videos-text-container">
+                                    <p class="videos-item-title">How to Make a Website in 10 mins - Simple & Easy</p>
+                                    <p class="youtube">
+                                        Youtube<span class="channel"> &#183; Website Learners</span>
+                                    </p>
+                                    <p class="date">Jan 3, 2018</p>
+                            </div>
+                            </div>
                         </a>
-                    </div>
-                    <div class="videos-item" id="smallishbeans">
                         <a class="videos-item-link" href="https://www.youtube.com/watch?v=wlNkDTkmS3c">
-                            <img class="videos-thumbnail" src="http://i3.ytimg.com/vi/wlNkDTkmS3c/maxresdefault.jpg" alt="SmallishBeans Video Thumbnail">
-                            <p class="videos-item-title">I Used a Website to Build this in Minecraft!</p>
-                            <p class="youtube">
-                                Youtube<span class="channel"> &#183; SmallishBeans</span>
-                            </p>
-                            <p class="date">Mar 1, 2020</p>
+                            <div class="videos-item" id="smallishbeans">
+                                <img class="videos-thumbnail" src="http://i3.ytimg.com/vi/wlNkDTkmS3c/maxresdefault.jpg" alt="SmallishBeans Video Thumbnail">
+                                <div class="videos-text-container">
+                                    <p class="videos-item-title">I Used a Website to Build this in Minecraft!</p>
+                                    <p class="youtube">
+                                        Youtube<span class="channel"> &#183; SmallishBeans</span>
+                                    </p>
+                                    <p class="date">Mar 1, 2020</p>
+                                </div>
+                            </div>
                         </a>
-                    </div>
-                    <div class="videos-item" id="roberto-blake">
                         <a class="videos-item-link" href="https://www.youtube.com/watch?v=l3mUE6qj2Qg">
-                            <img class="videos-thumbnail" src="http://i3.ytimg.com/vi/l3mUE6qj2Qg/maxresdefault.jpg" alt="Roberto Blake Video Thumbnail">
-                            <p class="videos-item-title">How To Build a Website Without Code | Everyone Can Build a ...</p>
-                            <p class="youtube">
-                                Youtube<span class="channel"> &#183; Roberto Blake</span>
-                            </p>
-                            <p class="date">Nov 7, 2016</p>
+                            <div class="videos-item" id="roberto-blake">
+                                <img class="videos-thumbnail" src="http://i3.ytimg.com/vi/l3mUE6qj2Qg/maxresdefault.jpg" alt="Roberto Blake Video Thumbnail">
+                                <div class="videos-text-container">
+                                    <p class="videos-item-title">How To Build a Website Without Code | Everyone Can Build a ...</p>
+                                    <p class="youtube">
+                                        Youtube<span class="channel"> &#183; Roberto Blake</span>
+                                    </p>
+                                    <p class="date">Nov 7, 2016</p>
+                                </div>
+                            </div>
                         </a>
-                    </div>
-                    <div class="videos-item" id="the-futur">
                         <a class="videos-item-link" href="https://www.youtube.com/watch?v=LZtM7wyqe7w">
-                            <img class="videos-thumbnail" src="http://i3.ytimg.com/vi/LZtM7wyqe7w/maxresdefault.jpg" alt="The Futur Video Thumbnail">
-                            <p class="videos-item-title">Building A Client Website From Scratch - Building A Brand ...</p>
-                            <p class="youtube">
-                                Youtube<span class="channel"> &#183; The Futur</span>
-                            </p>
-                            <p class="date">Jul 10, 2019</p>
+                            <div class="videos-item" id="the-futur">
+                                <img class="videos-thumbnail" src="http://i3.ytimg.com/vi/LZtM7wyqe7w/maxresdefault.jpg" alt="The Futur Video Thumbnail">
+                                <div class="videos-text-container">
+                                    <p class="videos-item-title">Building A Client Website From Scratch - Building A Brand ...</p>
+                                    <p class="youtube">
+                                        Youtube<span class="channel"> &#183; The Futur</span>
+                                    </p>
+                                    <p class="date">Jul 10, 2019</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <a class="expand-button-link" href="">
+                        <div class="expand-button" id="video-expand">
+                            <i class="fas fa-arrow-right expand-button-chevron"></i>
+                            <p class="expand-button-text">View all</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="search-result">
+                    <p class="result-path">
+                       www.websitebuilderexpert.com<span class="address"> &#8250; building-websites</span>
+                    </p>
+                    <a class="result-title" href="">
+                        How to Build a Website 2020 | The Complete Beginner's Guide
+                    </a>
+                    <p class="result-preview">
+                        Oct 22, 2020 — How to Build a Website from Scratch. We'll look at how to make a website with both a website builder and WordPress, with no steps left out.
+                    </p>
+                </div>
+                <div class="search-result">
+                    <p class="result-path">
+                        www.squarespace.com<span class="address"> &#9662;</span>
+                    </p>
+                    <a class="result-title" href="">
+                        Squarespace: Build a Website – Website Builder
+                    </a>
+                    <p class="result-preview">
+                        Squarespace is the all-in-one solution for anyone looking to create a beautiful website. Domains, eCommerce, hosting, galleries, analytics, and 24/7 support all ...
+                    </p>
+                </div>
+                <div class="insert" id="images-insert">
+                    <div id="images-title-container">
+                        <i class="far fa-image"></i>
+                        <p class="insert-title" id="images-title">Images for build this webpage</p>
+                    </div>
+                    <div id="keyword-container">
+                        <p class="images-keyword">personal website</p>
+                        <p class="images-keyword">web design</p>
+                        <p class="images-keyword">website builders</p>
+                        <p class="images-keyword">css</p>
+                        <p class="images-keyword">wix</p>
+                        <p class="images-keyword">portfolio</p>
+                        <i class="fas fa-chevron-down images-keyword-chevron"></i>
+                    </div>
+                    <div id="images-container">
+                        <div id="images-flex">
+                            <img class="images-images"
+                            src="https://images.websitebuilderexpert.com/wp-content/uploads/2018/01/How-to-Build-a-Website_Hero.jpg" 
+                            alt="Stock Image"
+                            >
+                            <img class="images-images" 
+                            src="https://images.websitebuilderexpert.com/wp-content/uploads/2019/10/31075858/building-website-choose-template-1-e1572618711896.png"
+                            alt="Stock Image"
+                            >
+                            <img class="images-images" 
+                            src="https://cdn2.editmysite.com/images/landing-pages/global/home-com-forward/themes/design-s.png"
+                            alt="Stock Image"
+                            >
+                            <img class="images-images" 
+                            src="https://collegeinfogeek.com/wp-content/uploads/2012/03/How-to-Build-a-Personal-Website-in-2020.jpg"
+                            alt="Stock Image"
+                            >
+                        </div>
+                        <i class="fas fa-chevron-right images-images-chevron"></i>
+                    </div>
+                    <p id="report-images">Report images</p>
+                    <a class="expand-button-link" href="">
+                        <div class="line"></div>
+                        <div class="expand-button" id="images-expand">
+                            <i class="fas fa-arrow-right expand-button-chevron"></i>
+                            <p class="expand-button-text">View all</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="search-result">
+                    <p class="result-path">
+                        www.pcmag.com<span class="address"> &#8250; ... &#8250; Web Hosting &#9662;</span>
+                    </p>
+                    <a class="result-title" href="">
+                        How to Create a Website | PCMag
+                    </a>
+                    <p class="result-preview">
+                        If you need to quickly build a simple website, starting with a blogging service is a great way to go. Advertisement. The major player in the blog game is WordPress, ...
+                    </p>
+                </div>
+                <div class="insert" id="question-insert">
+                    <div class="rounded-container" id="question-container">
+                        <p id="question-title">People also ask</p>
+                        <div class="question-item">
+                            <p class="question-item-text">How can I create my own webpage?</p>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="question-item">
+                            <p class="question-item-text">How do I build my website for free?</p>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="question-item">
+                            <p class="question-item-text">How much does it cost to build a website?</p>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="question-item" id="final-question-item">
+                            <p class="question-item-text">What is the best website builder 2020?</p>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <p class="feedback" id="question-feedback">Feedback</p>
+                </div>
+                <div class="search-result">
+                    <p class="result-path">
+                        neilpatel.com<span class="address"> &#8250; blog &#8250; from-0-to-launch-6-steps-to-buil... &#9662;</span>
+                    </p>
+                    <a class="result-title" href="">
+                        Build a Website: 6 Steps From 0 to Launch - Neil Patel
+                    </a>
+                    <p class="result-preview">
+                        Ready to build a website? Here's step by step guide to building and opimizing your first website including what hosting and CMS to use.
+                    </p>
+                </div>
+                <div class="search-result">
+                    <p class="result-path">
+                        www.website.com<span class="address"> &#9662;</span>
+                    </p>
+                    <a class="result-title" href="">
+                        Create Your Website for Free | Free Site Builder | Website.com
+                    </a>
+                    <p class="result-preview">
+                        Create a professional website for free with the Website.com website builder. Domain names, web hosting, website templates, and ecommerce solutions included. ... Build your beautiful. Multilingual Sites. Restaurant Website. Online Stores.
+                    </p>
+                </div>
+                <div class="search-result">
+                    <p class="result-path">
+                        www.google.com<span class="address"> &#8250; business &#8250; website-builder &#9662;</span>
+                    </p>
+                    <a class="result-title" href="">
+                        Free Website Builder For Your Business - Google My Business
+                    </a>
+                    <p class="result-preview">
+                        Let Google build your first website for free. We'll help you create a beautiful website to impress and engage new customers – and establish your business online.
+                    </p>
+                </div>
+                <div class="insert" id="also-search-insert">
+                    <div id="also-search-title-container">
+                        <p class="insert-title" id="also-search-title">People also search for</p>
+                    </div>
+                    <div class="rounded-container" id="also-search-container">
+                        <div id="inner-title">
+                            <p id="inner-title-text">Web design program</p>
+                            <i class="fas fa-chevron-up"></i>
+                        </div>
+                        <div id="tiles-container">
+                            <div class="tile">
+                                <img class="tile-image"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzjiQqDUN0QFG-Jaa7sTWk00P25GVL5U50qodMvaE&s=0"
+                                alt="Mobirise Logo"
+                                >
+                                <p class="tile-text">Mobirise</p>
+                            </div>
+                            <div class="tile">
+                                <img class="tile-image"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS74Tw3MKRW2gP0ANONeHK5ExSpiN2qMDgPmbV0gBg&s=0"
+                                alt="Google Web Designer Logo"
+                                >
+                                <p class="tile-text">Google Web Designer</p>
+                            </div>
+                            <div class="tile">
+                                <img class="tile-image"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdwr49HhZS0RDUUumrLbHxWkGU63i0LtVQpswplqc&s=0"
+                                alt="Adobe Dreamweaver Logo"
+                                >
+                                <p class="tile-text">Adobe Dreamwe...</p>
+                            </div>
+                            <div class="tile">
+                                <img class="tile-image"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpMPocHnsRKiDTIISoYhhUJ9W7Q2Kv9vHIJ9V9itrRqmyoqd_JlcBabf0&s=0"
+                                alt="CoffeeCup Logo"
+                                >
+                                <p class="tile-text">CoffeeCup HTML Editor</p>
+                            </div>
+                            <div class="tile">
+                                <img class="tile-image"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReb1TPyHDihSBgwd4CcYAbG1wI5uZ6IYLEr3h_MdU&s=0"
+                                alt="RapidWeaver Logo"
+                                >
+                                <p class="tile-text">RapidWe...</p>
+                            </div>
+                            <div class="tile">
+                                <img class="tile-image"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqOSlh9Xrx1XYHBbefQoANWstXTvlZIjay1eGWc4eePfpZ0D_Kkg&s=0"
+                                alt="openElement Logo"
+                                >
+                                <p class="tile-text">openEle...</p>
+                            </div>
+                        </div>
+                        <a class="expand-button-link" href="">
+                            <div class="expand-button" id="also-search-expand">
+                                <i class="fas fa-arrow-right expand-button-chevron"></i>
+                                <p class="expand-button-text">See more</p>
+                            </div>
+                        </a>
+                    </div>
+                    <p class="feedback" id="also-search-feedback">Feedback</p>
+                </div>
+                <div class="insert" id="related-insert">
+                    <div id="related-title-container">
+                        <p class="insert-title" id="related-title">Searches related to build this webpage</p>
+                    </div>
+                    <div id="related-container">
+                        <a class="related-link" href="">how to build a website from scratch</a>
+                        <a class="related-link" href="">create professional website</a>
+                        <a class="related-link" href="">free website builder</a>
+                        <a class="related-link" href="">how to create a website free of cost</a>
+                        <a class="related-link" href="">how to build a website from scratch html</a>
+                        <a class="related-link" href="">best website builder</a>
+                        <a class="related-link" href="">how to create a website on google</a>
+                        <a class="related-link" href="">build a website in a day</a>
+                    </div>
+                </div>
+                <div class="insert" id="nav-insert">
+                    <div id="google-container">
+                        <a class="google-nav-link" href="">
+                            <p class="google-letter google-g">G</p>
+                        </a>
+                        <a class="google-nav-link" href="">
+                            <p class="google-letter google-o" id="google-first-o">o</p>
+                            <p class="page-number">1</p>
+                        </a>
+                        <a class="google-nav-link" href="">
+                            <p class="google-letter google-o">o</p>
+                            <p class="page-number">2</p>
+                        </a>
+                        <a class="google-nav-link" href="">
+                            <p class="google-letter google-o">o</p>
+                            <p class="page-number">3</p>
+                        </a>
+                        <a class="google-nav-link" href="">
+                            <p class="google-letter google-o">o</p>
+                            <p class="page-number">4</p>
+                        </a>
+                        <a class="google-nav-link" href="">
+                            <p class="google-letter google-o">o</p>
+                            <p class="page-number">5</p>
+                        </a>
+                        <a class="google-nav-link" href="">
+                            <p class="google-letter google-o">o</p>
+                            <p class="page-number">6</p>
+                        </a>
+                        <a class="google-nav-link" href="">
+                            <p class="google-letter google-o">o</p>
+                            <p class="page-number">7</p>
+                        </a>
+                        <a class="google-nav-link" href="">
+                            <p class="google-letter google-o">o</p>
+                            <p class="page-number">8</p>
+                        </a>
+                        <a class="google-nav-link" href="">
+                            <p class="google-letter google-o">o</p>
+                            <p class="page-number">9</p>
+                        </a>
+                        <a class="google-nav-link" href="">
+                            <p class="google-letter google-o">o</p>
+                            <p class="page-number">10</p>
+                        </a>
+                        <a class="google-nav-link" href="">
+                            <p class="google-letter google-g">g</p>
+                        </a>
+                        <a class="google-nav-link" href="">
+                            <p class="google-letter google-l">l</p>
+                        </a>
+                        <a class="google-nav-link" href="">
+                            <p class="google-letter google-e">e</p>
+                        </a>
+                    </div>
+                    <div id="secondary-nav-container">
+                        <a class="google-nav-link" id="next-page-nav-link" href="">
+                            <i class="fas fa-chevron-right" id="nav-next-page-chevron"></i>
+                            <p id="next-page">Next</p>
                         </a>
                     </div>
                 </div>
-                <div class="expand-button" id="video-expand">
-                    <i class="fas fa-arrow-right"></i>
-                    <p class="expand-button-text">View all</p>
+            </section>
+    
+            <footer id="footer-section">
+                <div id="upper-footer">
+                    <p id="country">Country</p>
+                    <p id="location-info">Location Info</p>
                 </div>
-            </div>
-            <div class="search-result">
-                <p class="result-path">
-                   www.websitebuilderexpert.com<span class="address"> &#8250; building-websites</span>
-                </p>
-                <a class="result-title" href="">
-                    How to Build a Website 2020 | The Complete Beginner's Guide
-                </a>
-                <p class="result-preview">
-                    Oct 22, 2020 — How to Build a Website from Scratch. We'll look at how to make a website with both a website builder and WordPress, with no steps left out.
-                </p>
-            </div>
-            <div class="search-result">
-                <p class="result-path">
-                    www.squarespace.com<span class="address"> &#9662;</span>
-                </p>
-                <a class="result-title" href="">
-                    Squarespace: Build a Website – Website Builder
-                </a>
-                <p class="result-preview">
-                    Squarespace is the all-in-one solution for anyone looking to create a beautiful website. Domains, eCommerce, hosting, galleries, analytics, and 24/7 support all ...
-                </p>
-            </div>
-            <div class="insert" id="images-insert">
-                <div id="images-title-container">
-                    <i class="far fa-image"></i>
-                    <p class="insert-title" id="images-title">Images for build this webpage</p>
+                <div id="lower-footer">
+                    <a class="lower-footer-item" href="">Help</a>
+                    <a class="lower-footer-item" href="">Send feedback</a>
+                    <a class="lower-footer-item" href="">Privacy</a>
+                    <a class="lower-footer-item" href="">Terms</a>
                 </div>
-                <div id="keyword-container">
-                    <p class="images-keyword">personal website</p>
-                    <p class="images-keyword">web design</p>
-                    <p class="images-keyword">website builders</p>
-                    <p class="images-keyword">css</p>
-                    <p class="images-keyword">wix</p>
-                    <p class="images-keyword">portfolio</p>
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-                <div id="images-container">
-                    <img class="images-images"
-                    src="https://images.websitebuilderexpert.com/wp-content/uploads/2018/01/How-to-Build-a-Website_Hero.jpg" 
-                    alt="Stock Image"
-                    >
-                    <img class="images-images" 
-                    src="https://images.websitebuilderexpert.com/wp-content/uploads/2019/10/31075858/building-website-choose-template-1-e1572618711896.png"
-                    alt="Stock Image"
-                    >
-                    <img class="images-images" 
-                    src="https://cdn2.editmysite.com/images/landing-pages/global/home-com-forward/themes/design-s.png"
-                    alt="Stock Image"
-                    >
-                    <img class="images-images" 
-                    src="https://collegeinfogeek.com/wp-content/uploads/2012/03/How-to-Build-a-Personal-Website-in-2020.jpg"
-                    alt="Stock Image"
-                    >
-                </div>
-                <i class="fas fa-chevron-right"></i>
-                <p id="report-images">Report images</p>
-                <div class="expand-button" id="images-expand">
-                    <i class="fas fa-arrow-right"></i>
-                    <p class="expand-button-text">View all</p>
-                </div>
-            </div>
-            <div class="search-result">
-                <p class="result-path">
-                    www.pcmag.com<span class="address"> &#8250; ... &#8250; Web Hosting &#9662;</span>
-                </p>
-                <a class="result-title" href="">
-                    How to Create a Website | PCMag
-                </a>
-                <p class="result-preview">
-                    If you need to quickly build a simple website, starting with a blogging service is a great way to go. Advertisement. The major player in the blog game is WordPress, ...
-                </p>
-            </div>
-            <div class="insert" id="question-insert">
-                <div class="rounded-container" id="question-container">
-                    <p id="question-title">People also ask</p>
-                    <div class="question-item">
-                        <p class="question-item-text">How can I create my own webpage?</p>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="question-item">
-                        <p class="question-item-text">How do I build my website for free?</p>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="question-item">
-                        <p class="question-item-text">How much does it cost to build a website?</p>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="question-item">
-                        <p class="question-item-text">What is the best website builder 2020?</p>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                </div>
-                <p class="feedback" id="question-feedback">Feedback</p>
-            </div>
-            <div class="search-result">
-                <p class="result-path">
-                    neilpatel.com<span class="address"> &#8250; blog &#8250; from-0-to-launch-6-steps-to-buil... &#9662;</span>
-                </p>
-                <a class="result-title" href="">
-                    Build a Website: 6 Steps From 0 to Launch - Neil Patel
-                </a>
-                <p class="result-preview">
-                    Ready to build a website? Here's step by step guide to building and opimizing your first website including what hosting and CMS to use.
-                </p>
-            </div>
-            <div class="search-result">
-                <p class="result-path">
-                    www.website.com<span class="address"> &#9662;</span>
-                </p>
-                <a class="result-title" href="">
-                    Create Your Website for Free | Free Site Builder | Website.com
-                </a>
-                <p class="result-preview">
-                    Create a professional website for free with the Website.com website builder. Domain names, web hosting, website templates, and ecommerce solutions included. ... Build your beautiful. Multilingual Sites. Restaurant Website. Online Stores.
-                </p>
-            </div>
-            <div class="search-result">
-                <p class="result-path">
-                    www.google.com<span class="address"> &#8250; business &#8250; website-builder &#9662;</span>
-                </p>
-                <a class="result-title" href="">
-                    Free Website Builder For Your Business - Google My Business
-                </a>
-                <p class="result-preview">
-                    Let Google build your first website for free. We'll help you create a beautiful website to impress and engage new customers – and establish your business online.
-                </p>
-            </div>
-            <div class="insert" id="also-search-insert">
-                <div id="also-search-title-container">
-                    <p class="insert-title" id="also-search-title">People also search for</p>
-                </div>
-                <div class="rounded-container" id="also-search-container">
-                    <div id="inner-title">
-                        <p id="inner-title-text">Web design program</p>
-                        <i class="fas fa-chevron-up"></i>
-                    </div>
-                    <div id="tiles-container">
-                        <div class="tile">
-                            <img class="tile-image"
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzjiQqDUN0QFG-Jaa7sTWk00P25GVL5U50qodMvaE&s=0"
-                            alt="Mobirise Logo"
-                            >
-                            <p class="tile-text">Mobirise</p>
-                        </div>
-                        <div class="tile">
-                            <img class="tile-image"
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS74Tw3MKRW2gP0ANONeHK5ExSpiN2qMDgPmbV0gBg&s=0"
-                            alt="Google Web Designer Logo"
-                            >
-                            <p class="tile-text">Google Web Designer</p>
-                        </div>
-                        <div class="tile">
-                            <img class="tile-image"
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdwr49HhZS0RDUUumrLbHxWkGU63i0LtVQpswplqc&s=0"
-                            alt="Adobe Dreamweaver Logo"
-                            >
-                            <p class="tile-text">Adobe Dreamwe...</p>
-                        </div>
-                        <div class="tile">
-                            <img class="tile-image"
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpMPocHnsRKiDTIISoYhhUJ9W7Q2Kv9vHIJ9V9itrRqmyoqd_JlcBabf0&s=0"
-                            alt="CoffeeCup Logo"
-                            >
-                            <p class="tile-text">CoffeeCup HTML Editor</p>
-                        </div>
-                        <div class="tile">
-                            <img class="tile-image"
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReb1TPyHDihSBgwd4CcYAbG1wI5uZ6IYLEr3h_MdU&s=0"
-                            alt="RapidWeaver Logo"
-                            >
-                            <p class="tile-text">RapidWe...</p>
-                        </div>
-                        <div class="tile">
-                            <img class="tile-image"
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqOSlh9Xrx1XYHBbefQoANWstXTvlZIjay1eGWc4eePfpZ0D_Kkg&s=0"
-                            alt="openElement Logo"
-                            >
-                            <p class="tile-text">openEle...</p>
-                        </div>
-                    </div>
-                    <div class="expand-button" id="also-search-expand">
-                        <i class="fas fa-arrow-right"></i>
-                        <p class="expand-button-text">See more</p>
-                    </div>
-                </div>
-                <p class="feedback" id="also-search-feedback">Feedback</p>
-            </div>
-            <div class="insert" id="related-insert">
-                <div id="related-title-container">
-                    <p class="insert-title" id="related-title">Searches related to build this webpage</p>
-                </div>
-                <div id="related-container">
-                    <a class="related-link" href="">how to build a website from scratch</a>
-                    <a class="related-link" href="">create professional website</a>
-                    <a class="related-link" href="">free website builder</a>
-                    <a class="related-link" href="">how to create a website free of cost</a>
-                    <a class="related-link" href="">how to build a website from scratch html</a>
-                    <a class="related-link" href="">best website builder</a>
-                    <a class="related-link" href="">how to create a website on google</a>
-                    <a class="related-link" href="">build a website in a day</a>
-                </div>
-            </div>
-            <div class="insert" id="nav-insert">
-                <!--Use Roboto font for logo-->
-                <div id="google-container">
-                    <a class="google-nav-link" href="">
-                        <p class="google-letter" id="google-cap-g">G</p>
-                    </a>
-                    <a class="google-nav-link" href="">
-                        <p class="google-letter google-o" id="google-first-o">o</p>
-                        <p class="page-number">1</p>
-                    </a>
-                    <a class="google-nav-link" href="">
-                        <p class="google-letter google-o">o</p>
-                        <p class="page-number">2</p>
-                    </a>
-                    <a class="google-nav-link" href="">
-                        <p class="google-letter google-o">o</p>
-                        <p class="page-number">3</p>
-                    </a>
-                    <a class="google-nav-link" href="">
-                        <p class="google-letter google-o">o</p>
-                        <p class="page-number">4</p>
-                    </a>
-                    <a class="google-nav-link" href="">
-                        <p class="google-letter google-o">o</p>
-                        <p class="page-number">5</p>
-                    </a>
-                    <a class="google-nav-link" href="">
-                        <p class="google-letter google-o">o</p>
-                        <p class="page-number">6</p>
-                    </a>
-                    <a class="google-nav-link" href="">
-                        <p class="google-letter google-o">o</p>
-                        <p class="page-number">7</p>
-                    </a>
-                    <a class="google-nav-link" href="">
-                        <p class="google-letter google-o">o</p>
-                        <p class="page-number">8</p>
-                    </a>
-                    <a class="google-nav-link" href="">
-                        <p class="google-letter google-o">o</p>
-                        <p class="page-number">9</p>
-                    </a>
-                    <a class="google-nav-link" href="">
-                        <p class="google-letter google-o">o</p>
-                        <p class="page-number">10</p>
-                    </a>
-                    <a class="google-nav-link" href="">
-                        <p class="google-letter google-rest">gle</p>
-                    </a>
-                </div>
-                <div id="secondary-nav-container">
-                    <a class="google-nav-link" href="">
-                        <i class="fas fa-chevron-right" id="nav-next-page-chevron"></i>
-                        <p id="next-page">Next</p>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <footer>
-            <div id="upper-footer">
-                <p id="country">Country</p>
-                <p id="location-info">Location Info</p>
-            </div>
-            <div id="lower-footer">
-                <a class="lower-footer-item" href="">Help</a>
-                <a class="lower-footer-item" href="">Send feedback</a>
-                <a class="lower-footer-item" href="">Privacy</a>
-                <a class="lower-footer-item" href="">Terms</a>
-            </div>
-        </footer>
+            </footer>
+        </div>
     </body>
 </html>
